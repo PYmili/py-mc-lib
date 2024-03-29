@@ -1,4 +1,4 @@
-当然可以，以下是一个示例性的GitHub项目简介，假设该项目名为 `py-mc-lib`：
+当然可以，以下是一个示例性的GitHub项目简介，假设该项目名为 `py-mc-lib`
 
 ---
 
@@ -17,16 +17,30 @@
 - 🛡️ **安全优化**：遵循最佳实践，内置关键安全设置，例如禁用Lookup CVEs（如Log4j2漏洞）等。
 
 #### 快速开始：
+
+##### 安装
+
 ```
 pip install py-mc-lib
 ```
 
+##### 启动游戏
+
 ```python
-from py_mc_lib import Launcher
+from py_mc_lib import LauncherEvent
 
 # 创建一个Minecraft启动器实例
-launcher = Launcher("1.20.4", [游戏路径])
+launcher = LauncherEvent.Launcher("1.20.4", [游戏路径])
 launcher.start_game()
+```
+
+##### 下载游戏
+
+```python
+form py_mc_lib import JavaClient
+
+# 下载指定版本mc
+JavaClient.DownloadClinet("1.20.2")
 ```
 
 **欢迎加入我们的社区，共同打造更好的Minecraft开发体验！**
